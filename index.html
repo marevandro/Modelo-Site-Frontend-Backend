@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/position-club.css">
+  <link rel="stylesheet" href="/icons/fontawesome/css/all.css">
   <title>Orlando City</title>
 </head>
 
@@ -55,12 +56,7 @@
               <input type="search" class="form-control" placeholder="Search...">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button">
-                  <i class="bi bi-search" viewBox="0 0 16 16">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
-                      <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                  </i>
+                  <i class="fa fa-search"></i>
                 </button>
               </div>
             </div> <!--Input-grup-->
@@ -160,17 +156,20 @@
 
   <footer>
 
-    <div class="row-rodape-claro ">
+    <div class="linha row-rodape-claro ">
 
       <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-red">
+        <div class="linha">
+          <!-- imagem -->
+          <div class="col-md-2">
             <img src="img/orlando-logo.png" alt="logotipo" class="logotipo">
-
           </div>
-          <div class="col-md-10 col-red">
-            <div class="row">
-              <div class="col-md-4 col-yellow col-popular-post">
+          <!-- termina imagem -->
+
+          <!-- conteudo rodape -->
+          <div class="col-md-10">
+            <div class="linha row-cols">
+              <div class="col-md-4  col-popular-post">
                 <h4>POPULAR POSTS</h4>
 
                 <ul class="list-unstyled">
@@ -185,7 +184,9 @@
 
                 </ul>
               </div>
-              <div class="col-md-4 col-yellow col-links">
+
+              <div class="col-md-4 col-links">
+
                 <h4>LINKS</h4>
 
                 <ul class="list-unstyled">
@@ -194,37 +195,45 @@
                   <li><a href="#"><i class="fa fa-angle-right"></i>Schedule</a></li>
                 </ul>
               </div>
-              <div class="col-md-4 col-yellow col-get-in-touch">
+
+
+              <div class="col-md-4 col-get-in-touch">
+
+
                 <h4>GET IN TOUCH</h4>
 
                 <address>
-                  <i class="fa fa-map-marker"></i> <span>618 E. South Street, Suite 510<br />Orlando, FL 32801</span>
+                  <i class="fa fa-location-dot"></i> <span>618 E. South Street, Suite 510<br />Orlando, FL 32801</span>
                 </address>
 
                 <p><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>1.855.ORL.CITY</a></p>
 
                 <ul class="list-unstyled list-socials">
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
                   </li>
-                </ul> 
+                </ul>
+
               </div>
+
             </div>
           </div>
+          <!-- termina conteudo rodape -->
+
         </div>
       </div>
     </div>
 
-    <div class="row row-rodape-escuro">
+    <div class="linha row-rodape-escuro">
       <div class="container">
         <p class="float-start">Copyright © Orlando City Soccer 2016. All rights reserved.</p>
         <p class="float-end texto-roxo">Created by HCODE in Udemy</p>

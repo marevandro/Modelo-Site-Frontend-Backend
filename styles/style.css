@@ -230,8 +230,15 @@ footer {
   margin-top: 110px;
 }
 
-footer .row{
+footer .linha{
   width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .linha p {
+  line-height: 55px;
+  margin: 0 -5%; 
 }
 
 footer .row-rodape-claro {
@@ -245,13 +252,10 @@ footer .row-rodape-escuro {
   border-top: #242d37 1px solid;
 }
 
-footer .row p {
-  line-height: 55px;
-  margin: 0 12px; 
-}
+
 footer .float-start{
   font-family: 'Open-Sans';
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
 }
 footer .texto-roxo {
@@ -271,28 +275,33 @@ footer .col-links,
 footer .col-get-in-touch {
 	margin-top: 40px;
 }
+
 footer .row-cols h4 {
-	font-family: 'OpenSans';
+	font-family: 'Open-Sans';
 	font-size: 16px;
 	color: #FFF;
 	padding-bottom: 17px;
 	border-bottom: #242D37 1px solid;
 }
+
 footer .row-cols h5 {
 	color: #666;
 	font-family: Arial;
 	font-size: 14px;
 	margin-bottom: 0;
 }
+
 footer .row-cols time {
 	color: #FDE092;
 	font-family: Arial;
 	font-size: 14px;
 }
+
 footer .col-links a {
 	color: #FFF;
 	font-family: Arial;
 	font-size: 14px;
+  text-decoration: none;
 }
 footer .col-links .fa {
 	margin: 0 6px;
@@ -310,6 +319,12 @@ footer .col-get-in-touch address i {
 	position: relative;
 	top: -14px;
 }
+footer .col-get-in-touch a{
+	position: relative;
+	left: 14px;
+  text-decoration: none;
+}
+
 footer .col-get-in-touch i {
 	color: #9B9B9B;
 	font-size: 20px;
@@ -323,7 +338,7 @@ footer .col-get-in-touch p {
 	line-height: 20px;
 }
 footer .list-socials {
-	margin-top: 4px;
+	margin-top: 10px;
 }
 footer .list-socials li {
 	display: inline-block;
@@ -341,15 +356,4 @@ footer .list-socials a {
 footer .list-socials i {
 	font-size: 16px;
 	margin: 7px auto;
-}
-
-
-footer .col-red{
-  border: red 2px solid;
-  height: 200px;
-}
-
-footer .col-yellow{
-  border: yellow 2px solid;
-  height: 200px;
 }

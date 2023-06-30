@@ -3,10 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/position-club.css">
-  <link rel="stylesheet" href="/icons/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/all.css">
+  <link rel="stylesheet" href="lib/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="lib/owl-carousel/owl.theme.css">
   <title>Orlando City</title>
 </head>
 
@@ -48,18 +50,20 @@
 
       <nav id="menu" class="float-end">
         <ul>
-          <li><a href="">Tickets</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Schedule</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="#">Tickets</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Schedule</a></li>
           <li class="search">
-            <div class="input-group mb-3">
-              <input type="search" class="form-control" placeholder="Search...">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">
+            <div class="input-group">
+              <input type="search" placeholder="search..." id="input-search">
+              <span class="input-group-btn">
+                <button type="button">
                   <i class="fa fa-search"></i>
                 </button>
-              </div>
-            </div> <!--Input-grup-->
+              </span>
+            </div>
           </li>
         </ul>
       </nav>
@@ -78,26 +82,55 @@
         <hr>
       </div>
 
-      <div class="row thumbnails">
-        <div class="col-md-3">
-          <img src="img/noticia-thumb.jpg" alt="noticias">
-          <h3>Aqui e um doido, sendo doido o dia todo, vlw flwvlw flwvlw flwvlw flwvlw flw!</h3>
-          <p>Maio 12/2023</p>
+      <div class="row thumbnails owl-carousel owl-theme">
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flwvlw flwvlw flwvlw flwvlw flw!</h3>
+            <time>Maio 12/2023</time>
+          </div>
         </div>
-        <div class="col-md-3">
-          <img src="img/noticia-thumb.jpg" alt="noticias">
-          <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
-          <p>Maio 12/2023</p>
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
+            <time>Maio 12/2023</time>
+          </div>
         </div>
-        <div class="col-md-3">
-          <img src="img/noticia-thumb.jpg" alt="noticias">
-          <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
-          <p>Maio 12/2023</p>
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
+            <time>Maio 12/2023</time>
+          </div>
         </div>
-        <div class="col-md-3">
-          <img src="img/noticia-thumb.jpg" alt="noticias">
-          <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
-          <p>Maio 12/2023</p>
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
+            <time>Maio 12/2023</time>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
+            <time>Maio 12/2023</time>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
+            <time>Maio 12/2023</time>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-inner">
+            <img src="img/noticia-thumb.jpg" alt="noticias">
+            <h3>Aqui e um doido, sendo doido o dia todo, vlw flw!vlw flwvlw flwvlw flwvlw flw</h3>
+            <time>Maio 12/2023</time>
+          </div>
         </div>
       </div>
     </div>
@@ -244,9 +277,12 @@
 
   </footer>
 
-  <!-- <script src="/script.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owl-carousel/owl.carousel.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/efects.js"></script>
+
 </body>
 
 </html>

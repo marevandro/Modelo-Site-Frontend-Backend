@@ -1,3 +1,14 @@
+function handleSearch() {
+  var searchButton = document.querySelector('.search');
+  var btnAtivo = searchButton.classList.toggle('ativo');
+  console.log("🚀 ~ file: script.js:4 ~ handleSearch ~ btnAtivo:", btnAtivo)
+  if(btnAtivo){
+    searchButton.classList.add('ativo')
+  }else{
+    searchButton.classList.remove('ativo')
+  } 
+}
+
 $(function () {
 
   $("#logotipo").on("mouseover", function () {

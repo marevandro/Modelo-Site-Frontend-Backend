@@ -84,6 +84,7 @@ header #logotipo {
   color: #FFF;
   border: none;
   height: 35px;
+  transition: all 1s;
   /* line-height: 30px; */
 }
 
@@ -118,9 +119,8 @@ header #logotipo {
 } */
 
 #menu li.search button:hover {
-  background-color: #8c5bc3;
-  /* Green */
   color: white;
+  border-radius: 50%;
 }
 
 #menu li.search ::placeholder {
@@ -426,4 +426,8 @@ footer .list-socials a {
 footer .list-socials i {
   font-size: 16px;
   margin: 7px auto;
+}
+
+video {
+  width: 60%;
 }

@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/orlando-mobile.css">
   <link rel="stylesheet" href="/lib/plyr-master/src/sass/plyr.scss">
   <link rel="stylesheet" href="styles/position-club.css">
   <link rel="stylesheet" href="/lib/fontawesome/css/all.css">
@@ -16,12 +18,15 @@
 <body>
   <header>
 
-    <div class="container">
+    <div class="container container-logo">
       <img src="img/orlando-logo.png" alt="logotipo" id="logotipo">
     </div>
 
     <div class="header-black">
       <div class="container">
+        <button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
+        <button id="btn-search" type="button"><i class="fa fa-search"></i></button>
+
         <ul class="float-end">
           <li class="club-1"><a href=""></a></li>
           <li class="club-2"><a href=""></a></li>
@@ -208,6 +213,9 @@
                   </li>
                   <li>
                     <a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"><i class="fa-brands fa-chevron-up"></i></a>
                   </li>
                 </ul>
 

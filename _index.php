@@ -1,3 +1,20 @@
+<?php 
+
+require_once("inc/configuration.php");
+
+$sql = new Sql();
+
+$result = $sql->query("SELECT * FROM tb_produtos;");
+
+while($row = mysqli_fetch_array($result)){
+
+	var_dump($row);
+
+}
+
+exit;
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,7 +31,7 @@
 	</head>
 	<body>
 
-		<header>
+		<header class="open-menu">
 			
 			<div id="menu-mobile-mask" class="visible-xs"></div>
 
@@ -40,8 +57,6 @@
 			<div class="header-black">
 				
 				<div class="container">
-
-					<input type="search" id="input-search-mobile" class="visible-xs" placeholder="search...">
 				
 					<button id="btn-bars" type="button"><i class="fa fa-bars"></i></button>
 					<button id="btn-search" type="button"><i class="fa fa-search"></i></button>

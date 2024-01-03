@@ -96,7 +96,7 @@ exit;
 					
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="videos.html">Videos</a></li>
 							<li><a href="#">Tickets</a></li>
 							<li><a href="#">News</a></li>

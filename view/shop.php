@@ -12,7 +12,7 @@
 					<img src="img/produtos/moto-x.png" alt="Nome do Produto">
 				</div>
 				<div class="col-sm-6 col-descricao">
-					<h2>Smartphone Motorola Moto X Play Dual Chip Desbloqueado Andoid 5.1</h2>
+					<h2>Smartphonee Motorola Moto X Play Dual Chip Desbloqueado Andoid 5.1</h2>
 					<div class="box-valor">
 						<div class="text-noboleto text-arial-cinza">no boleto</div>
 						<div class="text-por text-arial-cinza">por</div>

@@ -8,7 +8,7 @@
 						
 						<div class="col-md-2 text-center hidden-xs">
 							
-							<img class="logotipo" src="img/orlando-logo.png" alt="Logotipo">
+							<img class="logotipo" src="../img/orlando-logo.png" alt="Logotipo">
 
 						</div>
 						<div class="col-md-10">

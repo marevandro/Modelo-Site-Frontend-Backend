@@ -21,56 +21,56 @@
 				<div class="row thumbnails">
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>chevron
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
 					</div>
 					<div class="item">
 						<div class="item-inner">
-							<img src="img/noticia-thumb.jpg" alt="Noticia">
+							<img src="../img/noticia-thumb.jpg" alt="Noticia">
 							<h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
 							<time>December 21, 2015</time>
 						</div>
@@ -132,3 +132,8 @@
 		</section>
 
 <?php include_once("footer.php");?>
+<script src="../lib/plyr/dist/plyr.js"></script>
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/efeitos.js"></script>

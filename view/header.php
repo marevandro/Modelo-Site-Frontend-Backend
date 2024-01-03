@@ -5,11 +5,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width:device-width, initial-scale=1">
 		<title>Orlando City</title>
-		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css">
-		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/orlando.css">
-		<link rel="stylesheet" href="css/orlando-mobile.css">
+		<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../lib/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/orlando.css">
+		<link rel="stylesheet" href="../css/orlando-mobile.css">
 
 	</head>
 	<body>
@@ -21,7 +21,7 @@
 			<div id="menu-mobile" class="visible-xs">
 				
 				<ul class="list-unstyled">
-					<li><a href="videos.html">Videos</a></li>
+					<li><a href="videos.php">Videos</a></li>
 					<li><a href="#">Tickets</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">Schedule</a></li>
@@ -34,7 +34,7 @@
 			</div>
 			
 			<div class="container">
-				<img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
+				<img id="logotipo" src="../img/orlando-logo.png" alt="Logotipo">
 			</div>
 
 			<div class="header-black">
@@ -82,7 +82,7 @@
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li><a href="videos.html">Videos</a></li>
+							<li><a href="view/videos.php">Videos</a></li>
 							<li><a href="#">Tickets</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">Schedule</a></li>

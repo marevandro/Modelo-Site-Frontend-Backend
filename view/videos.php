@@ -1,6 +1,6 @@
 <?php include_once("header.php");?>
 
-<link rel="stylesheet" href="lib/plyr/dist/plyr.css">
+<link rel="stylesheet" href="../lib/plyr/dist/plyr.css">
 
 <section>
 	
@@ -16,9 +16,9 @@
 			<div class="row">
 				
 				<div class="player">
-					<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg">
+					<video src="../mp4/highlights.mp4" controls poster="../img/highlights.jpg">
 						
-						<track kind="subtitles" label="Português (Brasil)" src="vtt/legendas.vtt" srclang="pt-br" default>
+						<track kind="subtitles" label="Português (Brasil)" src="../vtt/legendas.vtt" srclang="pt-br" default>
 
 					</video>
 				</div>
@@ -44,37 +44,37 @@
 		<div class="row thumbnails">
 			<div class="item" data-video="highlights">
 				<div class="item-inner">
-					<img src="img/highlights.jpg" alt="Noticia">
+					<img src="../img/highlights.jpg" alt="Noticia">
 					<h3>Highlights</h3>
 				</div>
 			</div>
 			<div class="item" data-video="Orlando_City_Foundation_2015">
 				<div class="item-inner">
-					<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+					<img src="../img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
 					<h3>Orlando City Foundation 2015</h3>
 				</div>
 			</div>
 			<div class="item" data-video="highlights">
 				<div class="item-inner">
-					<img src="img/highlights.jpg" alt="Noticia">
+					<img src="../img/highlights.jpg" alt="Noticia">
 					<h3>Highlights</h3>
 				</div>
 			</div>
 			<div class="item" data-video="Orlando_City_Foundation_2015">
 				<div class="item-inner">
-					<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+					<img src="../img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
 					<h3>Orlando City Foundation 2015</h3>
 				</div>
 			</div>
 			<div class="item" data-video="highlights">
 				<div class="item-inner">
-					<img src="img/highlights.jpg" alt="Noticia">
+					<img src="../img/highlights.jpg" alt="Noticia">
 					<h3>Highlights</h3>
 				</div>
 			</div>
 			<div class="item" data-video="Orlando_City_Foundation_2015.mp4">
 				<div class="item-inner">
-					<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+					<img src="../img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
 					<h3>Orlando City Foundation 2015</h3>
 				</div>
 			</div>
@@ -86,7 +86,11 @@
 
 <?php include_once("footer.php");?>
 
-<script src="lib/plyr/dist/plyr.js"></script>
+<script src="../lib/plyr/dist/plyr.js"></script>
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/efeitos.js"></script>
 <script>
 (function(d, p){
     var a = new XMLHttpRequest(),
@@ -99,7 +103,7 @@
         c.innerHTML = a.responseText;
         b.insertBefore(c, b.childNodes[0]);
     }
-})(document, "lib/plyr/dist/sprite.svg");
+})(document, "../lib/plyr/dist/sprite.svg");
 </script>
 <script>
 $(function(){
@@ -107,8 +111,8 @@ $(function(){
 	$(".thumbnails .item").on("click", function(){
 
 		$("video").attr({
-			"src":"mp4/"+$(this).data('video')+".mp4",
-			"poster":"img/"+$(this).data('video')+".jpg"
+			"src":"../mp4/"+$(this).data('video')+".mp4",
+			"poster":"../img/"+$(this).data('video')+".jpg"
 		});
 
 	});

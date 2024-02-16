@@ -82,7 +82,7 @@
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li><a href="view/videos.php">Videos</a></li>
+							<li><a href="videos.php">Videos</a></li>
 							<li><a href="#">Tickets</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">Schedule</a></li>

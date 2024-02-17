@@ -60,7 +60,7 @@
 					<h3>Highlights</h3>
 				</div>
 			</div>
-			<div class="item" data-video="Orlando_City_Foundation_2015">
+			<div class="item" data-video="../Orlando_City_Foundation_2015">
 				<div class="item-inner">
 					<img src="../img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
 					<h3>Orlando City Foundation 2015</h3>
@@ -87,10 +87,6 @@
 <?php include_once("footer.php");?>
 
 <script src="../lib/plyr/dist/plyr.js"></script>
-<script src="../lib/jquery/jquery.min.js"></script>
-<script src="../lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="../js/efeitos.js"></script>
 <script>
 (function(d, p){
     var a = new XMLHttpRequest(),

@@ -116,7 +116,7 @@
 						<div class="row row-max-400">
 							
 							<div class="col-xs-6">
-								<a href="#" class="btn btn-roxo">Shop</a>
+								<a href="shop.php" class="btn btn-roxo">Shop</a>
 							</div>
 							<div class="col-xs-6">
 								<a href="#" class="btn btn-amarelo">Register</a>
@@ -132,8 +132,3 @@
 		</section>
 
 <?php include_once("footer.php");?>
-<script src="../lib/plyr/dist/plyr.js"></script>
-<script src="../lib/jquery/jquery.min.js"></script>
-<script src="../lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="../js/efeitos.js"></script>

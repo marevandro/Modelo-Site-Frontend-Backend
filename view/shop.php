@@ -9,7 +9,7 @@
 			<div class="item" ng-repeat="produto in produtos">
 				
 				<div class="col-sm-6 col-imagem">
-					<img src="../img/produtos/{{produto.foto_principal}}" alt="{{produto.nome_prod_longo}}">
+					<img src="img/produtos/{{produto.foto_principal}}" alt="{{produto.nome_prod_longo}}">
 				</div>
 				<div class="col-sm-6 col-descricao">
 					<h2>{{produto.nome_prod_longo}}</h2>
@@ -98,7 +98,7 @@
 			<div class="col-md-3">
 				<div class="box-produto-info">
 					<a href="#">
-						<img src="../img/produtos/panelas.png" alt="Panelas" class="produto-img">
+						<img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
 						<h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
 						<div class="estrelas" data-score="3"></div>
 						<div class="text-qtd-reviews text-arial-cinza">(300)</div>
@@ -112,7 +112,7 @@
 			<div class="col-md-3">
 				<div class="box-produto-info">
 					<a href="#">
-						<img src="../img/produtos/panelas.png" alt="Panelas" class="produto-img">
+						<img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
 						<h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
 						<div class="estrelas"  data-score="5"></div>
 						<div class="text-qtd-reviews text-arial-cinza">(300)</div>
@@ -126,7 +126,7 @@
 			<div class="col-md-3">
 				<div class="box-produto-info">
 					<a href="#">
-						<img src="../img/produtos/panelas.png" alt="Panelas" class="produto-img">
+						<img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
 						<h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
 						<div class="estrelas"  data-score="2.5"></div>
 						<div class="text-qtd-reviews text-arial-cinza">(300)</div>
@@ -140,7 +140,7 @@
 			<div class="col-md-3">
 				<div class="box-produto-info">
 					<a href="#">
-						<img src="../img/produtos/panelas.png" alt="Panelas" class="produto-img">
+						<img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
 						<h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
 						<div class="estrelas"  data-score="5"></div>
 						<div class="text-qtd-reviews text-arial-cinza">(300)</div>
@@ -212,9 +212,9 @@ $(function(){
   	$('.estrelas').each(function(){
 
   		$(this).raty({
-	  		starHalf    : '../lib/raty/lib/images/star-half.png',                                // The name of the half star image.
-			  starOff     : '../lib/raty/lib/images/star-off.png',                                 // Name of the star image off.
-			  starOn      : '../lib/raty/lib/images/star-on.png',
+	  		starHalf    : 'lib/raty/lib/images/star-half.png',                                // The name of the half star image.
+			  starOff     : 'lib/raty/lib/images/star-off.png',                                 // Name of the star image off.
+			  starOn      : 'lib/raty/lib/images/star-on.png',
 			  score		: parseFloat($(this).data("score"))
 	  	});
 

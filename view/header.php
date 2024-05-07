@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="lib/raty/lib/jquery.raty.css">
 		<link rel="stylesheet" href="css/orlando.css">
 		<link rel="stylesheet" href="css/orlando-mobile.css">
+    <link rel="icon" href="img/orlando-logo.png"> 
 
     <script src="lib/angularjs/angular.min.js"></script>
 

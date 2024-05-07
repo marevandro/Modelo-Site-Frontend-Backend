@@ -110,7 +110,7 @@ $app->get(
   }
 );
 
-$app->get("/produto-:id_prod", function($id_prod) {
+$app->get("/produto-:id_prod", function ($id_prod) {
 
   include_once("inc/configuration.php");
 
@@ -120,14 +120,52 @@ $app->get("/produto-:id_prod", function($id_prod) {
   $produto = $produtos[0];
   $preco = $produto['preco'];
   $centavos = explode(".", $preco); // Para o php encontrar os centavos, utiliza-se o ponto (.) como referência.
-  $produto['preco'] = number_format($preco, 0,",",".");
+  $produto['preco'] = number_format($preco, 0, ",", ".");
   $produto['centavos'] = end($centavos);
   $produto['parcelas'] = 10;
-  $produto['parcela'] = number_format($preco/$produto['parcelas'], 2, ",", ".");
+  $produto['parcela'] = number_format($preco / $produto['parcelas'], 2, ",", ".");
   $produto['total'] = number_format($preco, 2, ",", ".");
 
   require_once("view/shop-produto.php");
+});
+
+$app->get(
+  '/cart',
+  function () {
+
+    require_once("view/cart.php");
+  }
+);
+
+$app->get('/carrinho-dados', function(){
+
+  $sql = new Sql();
+
+  $result = $sql->select("CALL sp_carrinhos_get('".session_id()."')");
+
+  $carrinho = $result[0];
+
+  $sql = new Sql();
+  
+  $carrinho['produtos'] = $sql->select("CALL sp_carrinhosprodutos_list('".$carrinho['id_car']."')");
+
+  $carrinho['total_car'] = number_format((float)$carrinho['total_car'], 2, ',', '.');
+  $carrinho['subtotal_car'] = number_format((float)$carrinho['subtotal_car'], 2, ',', '.');
+  $carrinho['frete_car'] = number_format((float)$carrinho['frete_car'], 2, ',', '.');
+
+
+  echo json_encode($carrinho);
+
 
 });
+
+$app->post('/carrinho', function(){
+
+  $request_body = json_decode(file_get_contents('php://input'), true);
+
+  var_dump($request_body);
+
+});
+
 
 $app->run();

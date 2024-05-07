@@ -29,7 +29,7 @@
               <span class="input-group-btn">
                 <button class="btn text-roxo" ng-click="addQtd(produto)" type="button"><i class="fa fa-chevron-down"></i></button>
               </span>
-              <input type="text" class="form-control" ng-model="produto.qtd">
+              <input type="text" class="form-control" ng-model="produto.qtd_car">
               <span class="input-group-btn">
                 <button class="btn text-roxo" ng-click="removeQtd(produto)" type="button"><i class="fa fa-chevron-up"></i></button>
               </span>
@@ -41,7 +41,7 @@
           </td>
           <td class="text-center">R$ {{produto.preco}}</td>
           <td class="text-center">R$ {{produto.total}}</td>
-          <td class="text-center"><button class="btn text-roxo" type="button"><i class="fa fa-close"></i></button></td>
+          <td class="text-center"><button ng-click="removeAll(produto)" class="btn text-roxo" type="button"><i class="fa fa-close"></i></button></td>
         </tr>
       </tbody>
     </table>
@@ -104,7 +104,6 @@
         };
 
         $scope.produtos = response.data.produtos;
-        console.log("🚀 ~ carregarCarrinho ~ response.data:", response.data)
 
       }, function(response) {
 
@@ -139,6 +138,21 @@
 
 
     };
+
+    $scope.removeAll = function(_produto) {
+      $http({
+        method: 'DELETE',
+        url: 'carrinhoRemoveAll-' + _produto.id_prod
+      }).then(function(response) {
+
+        carregarCarrinho();
+
+      }, function() {
+
+
+
+      });
+    }
 
     carregarCarrinho();
   });

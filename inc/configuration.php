@@ -16,27 +16,26 @@ class Sql {
 
 	}
 
-	public function select($string_query){
+  public function select($string_query) {
 
-		$result = $this->query($string_query);
+    $result = $this->query($string_query);
 
-		$data = array();
+    $data = array();
 
-	    while ($row = mysqli_fetch_array($result)) {
-	        
-	    	foreach ($row as $key => $value) {
-	    		$row[$key] = mb_convert_encoding($value, "Windows - 1252", "UTF-8");
-	    	}
+    while ($row = mysqli_fetch_array($result)) {
+        foreach ($row as $key => $value) {
+          $row[$key] = utf8_encode($value);
 
-	        array_push($data, $row);
+        }
 
-	    }
+          array_push($data, $row);
+    }
 
-	    unset($result);
+          unset($result);
 
-	    return $data;
+          return $data;
 
-	}
+}
 
 	public function __destruct(){
 
